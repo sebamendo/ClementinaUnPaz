@@ -14,24 +14,29 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--background-white);
 }
 
-ol, ul {
+ol,
+ul {
     padding-left: 0;
 }
 
-.botton-inicio{
+.botton-inicio {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
     z-index: 99;
 }
 
-.botton-inicio-a{
+.botton-inicio-a {
     color: var(--color-black);
     font-size: 2.3rem;
+}
+
+.nav-hamburger {
+    display: none;
 }
 
 /* NAVBAR */
@@ -88,7 +93,7 @@ ol, ul {
     background-size: cover;
     border-radius: 1rem;
     box-shadow: 9px 9px 16px var(--shadow-bottom),
-    -9px -9px 16px var(--shadow-top);
+        -9px -9px 16px var(--shadow-top);
 }
 
 .header-logo {
@@ -101,7 +106,7 @@ ol, ul {
     -o-border-radius: 1rem;
 }
 
-.header-title{
+.header-title {
     color: var(--color-white);
     margin-bottom: 3rem;
     font-size: 2.3rem;
@@ -111,10 +116,10 @@ ol, ul {
 
 /* SOBRE NOSOTROS */
 
-.sobre-nos{
+.sobre-nos {
     width: 100%;
     height: 60vh;
-    margin-top:  4rem;
+    margin-top: 4rem;
     text-align: center;
     border: 1px solid var(--color-white-1);
     border-radius: 1rem;
@@ -122,20 +127,20 @@ ol, ul {
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
-    box-shadow:9px 9px 16px var(--shadow-bottom),
-    -9px -9px 16px var(--shadow-top);
+    box-shadow: 9px 9px 16px var(--shadow-bottom),
+        -9px -9px 16px var(--shadow-top);
 }
 
 .sobre-nos-title,
 .propuestas-title,
-.integrantes-title{
+.integrantes-title {
     margin-top: 3rem;
     font-size: 2.3rem;
     margin-bottom: 3rem;
     text-align: center;
 }
 
-.sobre-nos-p{
+.sobre-nos-p {
     padding: 0 10rem;
     font-size: 1.8rem;
     margin: auto;
@@ -145,33 +150,33 @@ ol, ul {
 
 /* PROPUESTAS */
 
-.propuestas{
+.propuestas {
     width: 100%;
     height: 70vh;
-    margin-top:  4rem;
+    margin-top: 4rem;
     border: 1px solid var(--color-white-1);
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
-    box-shadow:9px 9px 16px var(--shadow-bottom),
-    -9px -9px 16px var(--shadow-top);
+    box-shadow: 9px 9px 16px var(--shadow-bottom),
+        -9px -9px 16px var(--shadow-top);
     margin-bottom: 3rem;
 }
 
-.propuestas-p{
+.propuestas-p {
     padding: 0 5rem;
     font-size: 1.6rem;
     text-align: center;
 }
 
-.propuestas-list{
+.propuestas-list {
     list-style: none;
     font-size: 1.1rem;
 }
 
-.propuestas-list-item{
+.propuestas-list-item {
     margin-top: .3rem;
     text-align: center;
 }
@@ -180,15 +185,15 @@ ol, ul {
 
 /* INTEGRANTES */
 
-.integrantes{
+.integrantes {
     width: 100%;
-    margin-top:  4rem;
+    margin-top: 4rem;
 }
 
-.integrantes-autoridades{
+.integrantes-autoridades {
     display: flex;
     justify-content: space-between;
-    padding:0 10rem;
+    padding: 0 10rem;
 }
 
 .integrantes-card {
@@ -213,15 +218,15 @@ ol, ul {
 
 .integrantes-card-img {
     width: 8rem;
-    margin-top: 2rem; 
+    margin-top: 2rem;
 }
 
-.integrantes-list{
+.integrantes-list {
     list-style: none;
     text-align: center;
 }
 
-.integrantes-list-item.title{
+.integrantes-list-item.title {
     margin: auto;
     font-size: 1.6rem;
     text-decoration: underline;
@@ -229,14 +234,15 @@ ol, ul {
     font-weight: 600;
 }
 
-.integrantes-list-item{
+.integrantes-list-item {
     font-size: 1.3rem;
 }
 
-.integrantes-voceros{
+.integrantes-voceros {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding:0 1rem;
+
 }
 
 .integrantes-card-2 {
@@ -250,7 +256,7 @@ ol, ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Asegura el espacio uniforme */
+    justify-content: space-between;
 }
 
 .integrantes-card-pick-2 {
@@ -267,7 +273,8 @@ ol, ul {
 
 .integrantes-card-redes {
     display: flex;
-    justify-content: center; /* Centro horizontal */
+    justify-content: center;
+    /* Centro horizontal */
     width: 100%;
 }
 
@@ -281,7 +288,8 @@ ol, ul {
 }
 
 .redes-link:last-child {
-    margin-right: 0; /* Quitar el margen derecho del último enlace */
+    margin-right: 0;
+    /* Quitar el margen derecho del último enlace */
 }
 
 .redes-link:hover {
@@ -292,20 +300,20 @@ ol, ul {
 
 /* FOOTER */
 
-.footer{
+.footer {
     width: 100%;
     height: 25vh;
     background-color: var(--color-black);
 }
 
-.footer-contain{
+.footer-contain {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 4rem 1rem 4rem; 
+    padding: 2rem 4rem 1rem 4rem;
     text-align: center;
 }
 
-.footer-logo-img{
+.footer-logo-img {
     width: 6rem;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
@@ -315,25 +323,25 @@ ol, ul {
     box-shadow: 8px 8px 16px var(--shadow-bottom);
 }
 
-.footer-list-contain{
+.footer-list-contain {
     margin: auto;
 }
 
-.footer-list{
+.footer-list {
     list-style: none;
     display: flex;
     align-items: center;
     text-align: center;
     align-content: center;
     margin: auto;
-    
+
 }
 
-.footer-list-item{
+.footer-list-item {
     margin: 0 2rem;
 }
 
-.footer-list-link{
+.footer-list-link {
     color: var(--color-white-1);
     font-size: 2rem;
     transition: .4s;
@@ -343,25 +351,198 @@ ol, ul {
     -o-transition: .4s;
 }
 
-.footer-list-link:hover{
+.footer-list-link:hover {
     color: var(--shadow-bottom);
 }
 
-.footer-blog{
+.footer-blog {
     margin: auto 0;
     text-align: center;
 }
 
-.footer-blog-link{
+.footer-blog-link {
     color: var(--color-white);
     text-decoration: none;
     font-size: 2rem;
 }
 
-.footer-copy{
+.footer-copy {
     width: 100%;
     text-align: center;
     color: var(--color-white);
 }
 
 /* FOOTER */
+
+/* QUERIES */
+
+@media screen and (max-width: 900px) {
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .nav-container-item {
+        font-size: .8rem;
+    }
+
+    .header-title {
+        margin-bottom: 7rem;
+    }
+
+    .sobre-nos-p {
+        padding: 0 7rem;
+        font-size: 1.6rem;
+        margin: auto;
+        margin-top: 5rem;
+    }
+
+    .propuestas-list {
+        margin: auto;
+    }
+
+    .integrantes-autoridades {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3rem;
+    }
+
+    .integrantes-card {
+        width: 15rem;
+        height: 20rem;
+        margin-top: 2rem;
+    }
+
+    .integrantes-voceros {
+        justify-content: center;
+    }
+
+    .integrantes-card-2 {
+        width: 13rem;
+        height: 17rem;
+        flex: 10 10 calc(50% - 10rem);
+        /* Dos tarjetas por fila */
+        margin: 4rem;
+        /* Margen entre las tarjetas */
+    }
+
+    .footer {
+        height: 15vh;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+
+    .sobre-nos-p {
+        margin-top: 1rem;
+    }
+
+    .sobre-nos-title,
+    .propuestas-title,
+    .integrantes-title {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer {
+        height: 17vh;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .nav-hamburger {
+        display: block;
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+
+    .nav-container-navbar {
+        display: flex;
+    }
+
+    .nav-container-list {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        margin: 2rem 0;
+        width: 50rem;
+        height: 20rem;
+        background-color: rgba(209, 209, 209, 0.6);
+    }
+
+    .list-hide {
+        display: block;
+    }
+
+    .nav-container-item {
+        margin: 2rem 0;
+    }
+
+    .header,
+    .sobre-nos,
+    .propuestas {
+        width: 90%;
+        height: 80vh;
+        text-align: center;
+    }
+
+    .header-logo {
+        width: 12rem;
+    }
+
+    .sobre-nos-title{
+        margin-bottom: 1rem;
+    }
+
+    .sobre-nos-p{
+        padding: 1rem;
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .propuestas{
+        height: 100%;
+    }
+
+    .propuestas-title{
+        margin-bottom: 1rem;
+    }
+
+    .propuestas-p{
+        padding: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .integrantes{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    .integrantes-autoridades,
+    .integrantes-voceros{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    .footer{
+        width: 100%;
+        height: 150px;
+        margin-bottom: 0;
+    }
+
+    .footer-logo{
+        display: none;
+    }
+
+}
+
+
+
+/* QUERIES */
