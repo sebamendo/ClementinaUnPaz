@@ -376,7 +376,7 @@ ul {
 
 /* QUERIES */
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
 
     .logo {
         font-size: 1rem;
@@ -432,7 +432,7 @@ ul {
 
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (min-width: 770px) {
 
     .sobre-nos-p {
         margin-top: 1rem;
@@ -451,7 +451,7 @@ ul {
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 500px) {
 
     .nav-hamburger {
         display: block;
